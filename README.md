@@ -6,8 +6,8 @@ This project is a Laravel-based API for managing holiday plans. It includes endp
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-repository.git
-    cd your-repository
+    git clone https://github.com/vitucs/buzzvel-test-2024.git
+    cd buzzvel-test-2024
     ```
 
 2. Install the dependencies:
