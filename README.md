@@ -57,7 +57,7 @@ To use the API, you need to authenticate and obtain an access token.
       "grant_type": "password",
       "client_id": "2",
       "client_secret": "3PcmVG8GEmubXgHYh7k8wbR0bdAwgFQSU5zOr9ny"
-  }```
+  }
 
 ### Create a Holiday
 
@@ -65,7 +65,7 @@ To use the API, you need to authenticate and obtain an access token.
 - **Headers**: ```{
                     Authorization: Bearer your-access-token
                     Content-Type: application/json
-                }```
+                }
 - **Body**:
   ```json
     {
@@ -74,7 +74,7 @@ To use the API, you need to authenticate and obtain an access token.
         "date": "2023-12-25",
         "location": "New York",
         "participants": ["Alice", "Bob", "Charlie"]
-    }```
+    }
 
 - **Response**:
   ```json
@@ -87,14 +87,14 @@ To use the API, you need to authenticate and obtain an access token.
         "participants": ["Alice", "Bob", "Charlie"],
         "created_at": "2023-08-06T12:34:56.000000Z",
         "updated_at": "2023-08-06T12:34:56.000000Z"
-    }```
+    }
 
 ### Get All Holidays
 
 - **Endpoint**: `GET  /api/holidays`
 - **Headers**: ```{
                     Authorization: Bearer your-access-token
-                }```
+                }
 
 - **Response**:
   ```json
@@ -107,14 +107,14 @@ To use the API, you need to authenticate and obtain an access token.
         "participants": ["Alice", "Bob", "Charlie"],
         "created_at": "2023-08-06T12:34:56.000000Z",
         "updated_at": "2023-08-06T12:34:56.000000Z"
-    }```
+    }
 
 ### Get a Single Holiday
 
 - **Endpoint**: `GET  /api/holidays/{id}`
 - **Headers**: ```{
                     Authorization: Bearer your-access-token
-                }```
+                }
 
 - **Response**:
   ```json
@@ -127,7 +127,7 @@ To use the API, you need to authenticate and obtain an access token.
         "participants": ["Alice", "Bob", "Charlie"],
         "created_at": "2023-08-06T12:34:56.000000Z",
         "updated_at": "2023-08-06T12:34:56.000000Z"
-    }```
+    }
 
 ### Update a Holiday
 
@@ -135,7 +135,7 @@ To use the API, you need to authenticate and obtain an access token.
 - **Headers**: ```{
                     Authorization: Bearer your-access-token
                     Content-Type: application/json
-                }```
+                }
 
 - **Body**:
   ```json
@@ -145,7 +145,7 @@ To use the API, you need to authenticate and obtain an access token.
         "date": "2023-12-25",
         "location": "New York",
         "participants": ["Alice", "Bob", "Charlie"]
-    }```
+    }
 
 - **Response**:
   ```json
@@ -158,24 +158,24 @@ To use the API, you need to authenticate and obtain an access token.
         "participants": ["Alice", "Bob", "Charlie"],
         "created_at": "2023-08-06T12:34:56.000000Z",
         "updated_at": "2023-08-06T12:34:56.000000Z"
-    }``` 
+    }
 
 ### Delete a Holiday
 
 - **Endpoint**: `DELETE  /api/holidays/{id}`
 - **Headers**: ```{
                     Authorization: Bearer your-access-token
-                }```
+                }
 - **Response**:
   ```json
     {
         "message": "Holiday deleted successfully."
-    }``` 
+    }
 
 ### Generate PDF for Holiday Plan
 
 - **Endpoint**: `GET   /api/holidays/{id}/pdf`
 - **Headers**: ```{
                     Authorization: Bearer your-access-token
-                }```
+                }
 - **Response**: The response will be a PDF document containing the details of the holiday.
