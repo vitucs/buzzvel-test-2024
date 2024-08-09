@@ -62,7 +62,7 @@ To use the API, you need to authenticate and obtain an access token.
 ### Create a Holiday
 
 - **Endpoint**: `POST /api/holidays`
-- **Headers**: ```{
+- **Headers**: {
                     Authorization: Bearer your-access-token
                     Content-Type: application/json
                 }
@@ -92,7 +92,7 @@ To use the API, you need to authenticate and obtain an access token.
 ### Get All Holidays
 
 - **Endpoint**: `GET  /api/holidays`
-- **Headers**: ```{
+- **Headers**: {
                     Authorization: Bearer your-access-token
                 }
 
@@ -112,7 +112,7 @@ To use the API, you need to authenticate and obtain an access token.
 ### Get a Single Holiday
 
 - **Endpoint**: `GET  /api/holidays/{id}`
-- **Headers**: ```{
+- **Headers**: {
                     Authorization: Bearer your-access-token
                 }
 
@@ -132,7 +132,7 @@ To use the API, you need to authenticate and obtain an access token.
 ### Update a Holiday
 
 - **Endpoint**: `PUT  /api/holidays/{id}`
-- **Headers**: ```{
+- **Headers**: {
                     Authorization: Bearer your-access-token
                     Content-Type: application/json
                 }
@@ -163,7 +163,7 @@ To use the API, you need to authenticate and obtain an access token.
 ### Delete a Holiday
 
 - **Endpoint**: `DELETE  /api/holidays/{id}`
-- **Headers**: ```{
+- **Headers**:  {
                     Authorization: Bearer your-access-token
                 }
 - **Response**:
@@ -175,7 +175,7 @@ To use the API, you need to authenticate and obtain an access token.
 ### Generate PDF for Holiday Plan
 
 - **Endpoint**: `GET   /api/holidays/{id}/pdf`
-- **Headers**: ```{
+- **Headers**: {
                     Authorization: Bearer your-access-token
                 }
 - **Response**: The response will be a PDF document containing the details of the holiday.
