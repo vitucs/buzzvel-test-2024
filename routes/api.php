@@ -18,4 +18,5 @@ use App\Http\Controllers\AuthController;
 
 Route::middleware('auth:api')->group(function () {
     Route::apiResource('holidays', HolidayController::class);
+    Route::get('/holidays/{id}/pdf', [HolidayController::class, 'generatePdf']);
 });
